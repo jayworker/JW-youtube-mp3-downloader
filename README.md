@@ -9,30 +9,51 @@
 
 ---
 
-## ⬇ 바로 다운로드
+## 📦 최신 정식 빌드
+
+> 모든 빌드는 [GitHub Actions](https://github.com/jayworker/JW-youtube-mp3-downloader/actions/workflows/release.yml)에서
+> 본 저장소의 소스코드를 그대로 컴파일한 결과물입니다. 누구나 소스부터 빌드 로그까지 확인할 수 있어요.
+
+<div align="center">
 
 <table>
 <tr>
-<td width="50%" align="center">
+<td width="50%" align="center" valign="top">
 
-### 🪟 Windows
+#### 🪟 &nbsp; Windows (64-bit)
 
-### [👉 다운로드](https://github.com/jayworker/JW-youtube-mp3-downloader/releases/latest/download/JW-YouTubeMP3Downloader-windows.zip)
+<a href="https://github.com/jayworker/JW-youtube-mp3-downloader/releases/latest/download/JW-YouTubeMP3Downloader-windows.zip">
+<img src="https://img.shields.io/badge/Download_for_Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white&labelColor=0078D4" alt="Download for Windows" height="44">
+</a>
 
-zip 압축 풀기 → **`JW-YouTubeMP3Downloader.exe`** 더블클릭
+![Version](https://img.shields.io/github/v/release/jayworker/JW-youtube-mp3-downloader?label=version&color=0078D4)
+![Size](https://img.shields.io/badge/size-~96_MB-lightgrey)
+
+압축을 풀고 **`JW-YouTubeMP3Downloader.exe`** 더블클릭
 
 </td>
-<td width="50%" align="center">
+<td width="50%" align="center" valign="top">
 
-### 🍎 macOS
+#### 🍎 &nbsp; macOS (Apple Silicon)
 
-### [👉 다운로드](https://github.com/jayworker/JW-youtube-mp3-downloader/releases/latest/download/JW-YouTubeMP3Downloader-macos.zip)
+<a href="https://github.com/jayworker/JW-youtube-mp3-downloader/releases/latest/download/JW-YouTubeMP3Downloader-macos.zip">
+<img src="https://img.shields.io/badge/Download_for_macOS-000000?style=for-the-badge&logo=apple&logoColor=white&labelColor=000000" alt="Download for macOS" height="44">
+</a>
 
-zip 압축 풀기 → **`JW-YouTubeMP3Downloader.app`** 실행
+![Version](https://img.shields.io/github/v/release/jayworker/JW-youtube-mp3-downloader?label=version&color=555555)
+![Size](https://img.shields.io/badge/size-~74_MB-lightgrey)
+
+압축을 풀고 **`JW-YouTubeMP3Downloader.app`** 실행
 
 </td>
 </tr>
 </table>
+
+[**전체 릴리스 목록 →**](https://github.com/jayworker/JW-youtube-mp3-downloader/releases) &nbsp;·&nbsp;
+[**소스 코드 →**](https://github.com/jayworker/JW-youtube-mp3-downloader) &nbsp;·&nbsp;
+[**빌드 워크플로 →**](https://github.com/jayworker/JW-youtube-mp3-downloader/blob/main/.github/workflows/release.yml)
+
+</div>
 
 ### 사용법 (둘 다 동일)
 
