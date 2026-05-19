@@ -1,0 +1,29 @@
+# Build artifacts
+build/
+dist/
+*.zip
+
+# Bundled third-party binaries (download via scripts/fetch_ffmpeg.{ps1,sh})
+vendor/ffmpeg
+vendor/ffmpeg.exe
+vendor/ffprobe
+vendor/ffprobe.exe
+
+# Runtime output
+downloads/
+.omc/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

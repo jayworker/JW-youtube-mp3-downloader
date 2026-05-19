@@ -1,0 +1,99 @@
+name: Build & Release
+
+# Triggers:
+#   - Tag push  (e.g. v1.0.1)   → builds + uploads to a GitHub Release
+#   - Manual    (workflow_dispatch) → builds + uploads as workflow artifacts
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write   # required to attach binaries to a Release
+
+jobs:
+  # ──────────────────────────────────────────────────────────────────────
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Fetch FFmpeg
+        shell: pwsh
+        run: ./scripts/fetch_ffmpeg.ps1
+
+      - name: Build with PyInstaller
+        run: python -m PyInstaller --noconfirm JW-YouTubeMP3Downloader.spec
+
+      - name: Package zip
+        shell: pwsh
+        run: |
+          Compress-Archive `
+            -Path dist/JW-YouTubeMP3Downloader `
+            -DestinationPath JW-YouTubeMP3Downloader-windows.zip `
+            -Force
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-build
+          path: JW-YouTubeMP3Downloader-windows.zip
+
+      - name: Upload to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: JW-YouTubeMP3Downloader-windows.zip
+
+  # ──────────────────────────────────────────────────────────────────────
+  build-macos:
+    runs-on: macos-latest   # Apple Silicon (arm64)
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Fetch FFmpeg
+        run: bash ./scripts/fetch_ffmpeg.sh
+
+      - name: Build with PyInstaller
+        run: python -m PyInstaller --noconfirm JW-YouTubeMP3Downloader.spec
+
+      - name: Package zip
+        run: |
+          cd dist
+          # ditto preserves resource forks / extended attributes — preferred
+          # over `zip` for .app bundles on macOS.
+          ditto -c -k --sequesterRsrc --keepParent \
+            JW-YouTubeMP3Downloader.app \
+            ../JW-YouTubeMP3Downloader-macos.zip
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-build
+          path: JW-YouTubeMP3Downloader-macos.zip
+
+      - name: Upload to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: JW-YouTubeMP3Downloader-macos.zip
