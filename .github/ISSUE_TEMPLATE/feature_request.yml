@@ -1,0 +1,19 @@
+name: 💡 기능 제안
+description: 새로 추가하면 좋을 기능 아이디어
+title: "[제안] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 어떤 기능이 있으면 좋을까요?
+      placeholder: |
+        예) 재생목록(playlist) 일괄 다운로드 기능
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 왜 필요한가요? (선택)
+      description: 어떤 상황에서 어떻게 도움이 되는지 알려주시면 우선순위 판단에 도움이 됩니다.
