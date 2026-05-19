@@ -1,7 +1,7 @@
 # YouTube MP3 Downloader
 
-[![Latest Release](https://img.shields.io/github/v/release/jayworker/youtube-mp3-downloader?label=download&style=for-the-badge&color=f43f5e)](https://github.com/jayworker/youtube-mp3-downloader/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/jayworker/youtube-mp3-downloader/total?style=for-the-badge&color=8b5cf6)](https://github.com/jayworker/youtube-mp3-downloader/releases)
+[![Latest Release](https://img.shields.io/github/v/release/jayworker/JW-youtube-mp3-downloader?label=download&style=for-the-badge&color=f43f5e)](https://github.com/jayworker/JW-youtube-mp3-downloader/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/jayworker/JW-youtube-mp3-downloader/total?style=for-the-badge&color=8b5cf6)](https://github.com/jayworker/JW-youtube-mp3-downloader/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 YouTube 링크를 붙여넣으면 MP3로 변환해 저장해주는 작은 데스크탑 앱입니다.
@@ -17,7 +17,7 @@ Python + Tkinter 기반의 가벼운 GUI이며, 다운로드/추출은 전적으
 
 ## ⬇ 다운로드
 
-### 🪟 Windows — [한 번에 다운로드 (최신 버전)](https://github.com/jayworker/youtube-mp3-downloader/releases/latest/download/JW-YouTubeMP3Downloader-windows.zip)
+### 🪟 Windows — [한 번에 다운로드 (최신 버전)](https://github.com/jayworker/JW-youtube-mp3-downloader/releases/latest/download/JW-YouTubeMP3Downloader-windows.zip)
 
 1. 위 버튼으로 zip을 받습니다.
 2. 압축을 풀고 폴더 안의 **`JW-YouTubeMP3Downloader.exe`**를 더블클릭합니다.
@@ -26,7 +26,7 @@ Python + Tkinter 기반의 가벼운 GUI이며, 다운로드/추출은 전적으
 > 💡 처음 실행 시 "Windows의 PC 보호" 경고가 뜰 수 있습니다.
 > 코드 서명을 하지 않은 빌드라서 그렇습니다. **추가 정보 → 실행**을 누르면 동작합니다.
 
-### 🍎 macOS (Apple Silicon) — [한 번에 다운로드 (최신 버전)](https://github.com/jayworker/youtube-mp3-downloader/releases/latest/download/JW-YouTubeMP3Downloader-macos.zip)
+### 🍎 macOS (Apple Silicon) — [한 번에 다운로드 (최신 버전)](https://github.com/jayworker/JW-youtube-mp3-downloader/releases/latest/download/JW-YouTubeMP3Downloader-macos.zip)
 
 1. 위 버튼으로 zip을 받습니다.
 2. 압축을 풀고 나오는 **`JW-YouTubeMP3Downloader.app`**을 `응용 프로그램`(Applications) 폴더로 드래그합니다.
@@ -42,7 +42,7 @@ Python + Tkinter 기반의 가벼운 GUI이며, 다운로드/추출은 전적으
 ---
 
 다른 모든 릴리스(이전 버전 포함)는
-[Releases 페이지](https://github.com/jayworker/youtube-mp3-downloader/releases)에서 확인하세요.
+[Releases 페이지](https://github.com/jayworker/JW-youtube-mp3-downloader/releases)에서 확인하세요.
 
 ---
 
@@ -81,8 +81,8 @@ Python + Tkinter 기반의 가벼운 GUI이며, 다운로드/추출은 전적으
 ### 1. 저장소 클론 및 의존성 설치
 
 ```powershell
-git clone https://github.com/jayworker/youtube-mp3-downloader.git
-cd youtube-mp3-downloader
+git clone https://github.com/jayworker/JW-youtube-mp3-downloader.git
+cd JW-youtube-mp3-downloader
 
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
