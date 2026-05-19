@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 사용법 / 일반 질문
+    url: https://github.com/jayworker/JW-youtube-mp3-downloader/discussions
+    about: 버그가 아닌 질문(설치, 사용법, 잡담)은 Discussions에서 더 빠르게 답변받을 수 있어요.

@@ -63,14 +63,19 @@
 
 ---
 
-## 💬 버그 신고 / 문의
+## 💬 문의 / 버그 신고
 
-문제가 생기거나 궁금한 게 있으면 아래 링크에서 알려주세요. 양식만 채우시면 됩니다 (GitHub 계정 필요 · 무료).
+문제가 생기거나 궁금한 게 있으면 아래에서 알려주세요. 양식만 채우시면 됩니다 (GitHub 계정 필요 · 무료).
 
-- 🐛 [**버그 신고하기**](https://github.com/jayworker/JW-youtube-mp3-downloader/issues/new?template=bug_report.yml)
-- 💡 [**기능 제안하기**](https://github.com/jayworker/JW-youtube-mp3-downloader/issues/new?template=feature_request.yml)
-- ❓ [**그 외 문의**](https://github.com/jayworker/JW-youtube-mp3-downloader/issues/new?template=question.yml)
-- 📋 [모든 이슈 보기 / 검색](https://github.com/jayworker/JW-youtube-mp3-downloader/issues) — 같은 문제를 다른 분이 이미 신고했을 수도 있어요.
+| 종류 | 어디로 | 용도 |
+|---|---|---|
+| 🐛 **버그 신고** | [Issues — Bug report](https://github.com/jayworker/JW-youtube-mp3-downloader/issues/new?template=bug_report.yml) | 앱이 안 되거나 이상하게 동작할 때 |
+| 💡 **기능 제안** | [Issues — Feature request](https://github.com/jayworker/JW-youtube-mp3-downloader/issues/new?template=feature_request.yml) | "이런 기능 있으면 좋겠다" |
+| 💬 **사용법·일반 질문** | [Discussions](https://github.com/jayworker/JW-youtube-mp3-downloader/discussions) | "어떻게 쓰는지 모르겠어요", 잡담 |
+
+📋 같은 문제를 다른 분이 이미 올렸을 수도 있어요 →
+[기존 이슈 검색](https://github.com/jayworker/JW-youtube-mp3-downloader/issues?q=is%3Aissue) ·
+[기존 Discussions 검색](https://github.com/jayworker/JW-youtube-mp3-downloader/discussions)
 
 > **여기까지가 일반 사용자가 알아야 할 전부입니다.** 아래는 개발자/고급 사용자용입니다.
 
