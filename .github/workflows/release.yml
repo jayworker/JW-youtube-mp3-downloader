@@ -46,8 +46,8 @@ jobs:
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v7
         with:
-          name: windows-build
-          path: JW-YouTubeMP3Downloader-windows.zip
+          name: JW-YouTubeMP3Downloader-windows
+          path: dist/JW-YouTubeMP3Downloader
 
       - name: Upload to GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
@@ -89,7 +89,7 @@ jobs:
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v7
         with:
-          name: macos-build
+          name: JW-YouTubeMP3Downloader-macos
           path: JW-YouTubeMP3Downloader-macos.zip
 
       - name: Upload to GitHub Release
