@@ -1,11 +1,13 @@
-# YouTube MP3 Downloader
+# JW-YouTube MP3 Downloader
 
 [![Latest Release](https://img.shields.io/github/v/release/jayworker/JW-youtube-mp3-downloader?label=download&style=for-the-badge&color=f43f5e)](https://github.com/jayworker/JW-youtube-mp3-downloader/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/jayworker/JW-youtube-mp3-downloader/total?style=for-the-badge&color=8b5cf6)](https://github.com/jayworker/JW-youtube-mp3-downloader/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-**YouTube 링크를 붙여넣고 버튼만 누르면 MP3로 저장되는 데스크탑 앱.**
+**링크를 붙여넣고 버튼만 누르면 MP3로 저장되는 데스크탑 앱.**
 설치도 필요 없고, 따로 깔 것도 없습니다. zip 받아서 풀고 실행하면 끝.
+
+> 📢 **이름은 "YouTube MP3 Downloader"지만, YouTube뿐 아니라 Instagram · TikTok 등 yt-dlp가 지원하는 사이트의 음원도 동일하게 MP3로 다운로드할 수 있어요.**
 
 ---
 
@@ -58,7 +60,7 @@
 ### 사용법 (둘 다 동일)
 
 1. 앱 실행
-2. YouTube 링크 붙여넣기
+2. 링크 붙여넣기 (YouTube · Instagram · TikTok 등)
 3. **MP3 다운로드** 버튼 → 끝.
 
 ---
